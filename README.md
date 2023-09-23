@@ -16,6 +16,7 @@ Methods are functions defined within the class that define the behaviors or acti
 Constructor is a special method that gets called when you create a new object from a class. It typically initializes the object's attributes. In many programming languages, the constructor method is named after the class itself (e.g., __init__ in Python).
 
 | Language | Creating Constructor |
+| - | - |
 | Python | def __init__(self, name, age, gender): |
 | C# | C# does not need a constructor. Class level variables can be defined on public fields |
 | JavaScript | constructor(name, age, gender) { ... } |
