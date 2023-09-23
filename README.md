@@ -9,12 +9,24 @@ Classes Cheat Sheat in OOP
 ## Attributes
 Attributes or Properties are the data members or variables that store information about the object. Attributes represent the characteristics or state of the object. For example, if you're creating a class to represent a "Person," attributes might include name, age, and gender.
 
+Example:
+
+| Language | Attribute |
+|-|-|
+| Python | self.name = name |
+| C# (public field in class without constructor)| public string Name { get; set; } |
+| JavaScript | this.name = name; |
+| JAVA | this.name = name; |
+| PHP | $this->name = $name; |
+        
+
 ## Methods
 Methods are functions defined within the class that define the behaviors or actions that objects of the class can perform. For example, for the "Person" class, you might have methods like speak(), walk(), or eat().
 
 ## Constructor
 Constructor is a special method that gets called when you create a new object from a class. It typically initializes the object's attributes. In many programming languages, the constructor method is named after the class itself (e.g., __init__ in Python).
 
+Example:
 
 | Language | Creating Constructor |
 |-|-|
@@ -22,3 +34,4 @@ Constructor is a special method that gets called when you create a new object fr
 | C# | C# does not need a constructor. Class level variables can be defined on public fields |
 | JavaScript | constructor(name, age, gender) { ... } |
 | JAVA | public Person(String name, int age, String gender) { ... } |
+| PHP | public function __construct($name, $age, $gender) { ... } |
