@@ -106,7 +106,7 @@ Method overriding is a fundamental concept in object-oriented programming (OOP) 
 
 Here's an example in Java to illustrate method overriding:
 
-´´´
+```
 class Animal {
     void makeSound() {
         System.out.println("The animal makes a generic sound.");
@@ -126,7 +126,7 @@ public class Main {
         animal.makeSound(); // Output: The dog barks.
     }
 }
-´´´
+```
 
 In this example, we have a superclass Animal with a method makeSound(), and a subclass Dog that overrides the makeSound() method. When we create a Dog object and assign it to an Animal reference, we can call makeSound(). The overridden method in the Dog class is invoked, demonstrating method overriding and polymorphism.
 
@@ -137,7 +137,7 @@ In Java:
 
 In Java, you can prevent method overriding by using the final keyword. When you declare a method as final in a class, it becomes a sealed method, and subclasses are not allowed to override it. Here's an example:
 
-´´´
+```
 class Parent {
     final void finalMethod() {
         System.out.println("This method cannot be overridden.");
@@ -155,7 +155,7 @@ public class Main {
         parent.finalMethod(); // Output: This method cannot be overridden.
     }
 }
-´´´
+```
 
 In object-oriented programming, you can prevent method overriding (also known as method sealing or method finalization) by using language-specific mechanisms or keywords that restrict a method from being overridden in subclasses. Below, I'll explain how to prevent method overriding in Java and C#.
 
@@ -189,7 +189,7 @@ In C#:
 
 In C#, you can prevent method overriding by using the sealed keyword. When you declare a method as sealed in a class, it becomes a sealed method, and subclasses are not allowed to override it. Here's an example:
 
-´´´
+```
 class Parent
 {
     public sealed void SealedMethod()
@@ -212,7 +212,7 @@ class Program
         parent.SealedMethod(); // Output: This method cannot be overridden.
     }
 }
-´´´
+```
 
 In this C# example, the SealedMethod() in the Parent class is declared as sealed, so when we try to override it in the Child class, it results in a compilation error.
 
